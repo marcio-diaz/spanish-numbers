@@ -1,6 +1,6 @@
 [package]
 name = "spanish-numbers"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Marcio Diaz <marcio.diaz@gmail.com>"]
 description = "Convert integers to written Spanish number format"
 keywords = ["spanish", "number", "convert", "format"]
