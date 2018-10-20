@@ -1,0 +1,7 @@
+[package]
+name = "spanish-numbers"
+version = "0.1.0"
+authors = ["Marcio Diaz <marcio.diaz@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
