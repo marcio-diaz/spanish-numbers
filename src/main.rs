@@ -18,14 +18,25 @@ fn main() {
     opts.optflag("h", "help", "print this help menu");
     opts.optflag("n", "newline", "use newline as separator");
 
+    if args.len() < 2 {
+        print_usage(&program, opts);
+        return;
+    }
+
     let matches = match opts.parse(&args[1..]) {
         Ok(m) => { m }
-        Err(f) => { panic!(f.to_string()) }
+        Err(msg) => {
+            println!("{}", msg);
+            print_usage(&program, opts);
+            return;
+        }
     };
+
     if matches.opt_present("h") {
         print_usage(&program, opts);
         return;
     }
+
     let num = match u128::from_str_radix(&args[1], 10) {
         Ok(num) => num,
         Err(msg) => {
