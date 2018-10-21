@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/marcio-diaz/spanish-numbers.svg?branch=master)](https://travis-ci.com/marcio-diaz/spanish-numbers)
+
 # spanish-numbers
 
 Program that translates positive integers to spanish words.
