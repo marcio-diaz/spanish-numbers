@@ -1,3 +1,8 @@
+//! # spanish-numbers
+//!
+//! A library for converting integers to their written spanish formats.  
+//! Supports both American "short" and European "long" number formats.
+
 #[derive(Copy, Clone)]
 pub enum ScaleType {
     Short,
